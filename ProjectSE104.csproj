@@ -33,6 +33,39 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EPPlus, Version=4.1.0.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>packages\MVC_PPC_Theme_ByTom.1.4.1\lib\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.Interfaces, Version=6.1.1.0, Culture=neutral, PublicKeyToken=a694d7f3b0907a61, processorArchitecture=MSIL">
+      <HintPath>packages\EPPlus.Interfaces.6.1.1\lib\net462\EPPlus.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.System.Drawing, Version=6.1.1.0, Culture=neutral, PublicKeyToken=2308d35469c9bac0, processorArchitecture=MSIL">
+      <HintPath>packages\EPPlus.System.Drawing.6.1.1\lib\net462\EPPlus.System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlRenderer, Version=1.5.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MVC_PPC_Theme_ByTom.1.4.1\lib\HtmlRenderer.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlRenderer.PdfSharp, Version=1.5.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MVC_PPC_Theme_ByTom.1.4.1\lib\HtmlRenderer.PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlRenderer.WinForms, Version=1.5.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MVC_PPC_Theme_ByTom.1.4.1\lib\HtmlRenderer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicNP.CryptoLicensing, Version=11.0.0.0, Culture=neutral, PublicKeyToken=4a3c0a4c668b48b4">
+      <HintPath>packages\MVC_PPC_Theme_ByTom.1.4.1\lib\LogicNP.CryptoLicensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.TaskScheduler, Version=2.5.21.0, Culture=neutral, PublicKeyToken=0d013ddd5178a2ae, processorArchitecture=MSIL">
+      <HintPath>packages\MVC_PPC_Theme_ByTom.1.4.1\lib\Microsoft.Win32.TaskScheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="Patagames.Pdf, Version=3.6.3.2704, Culture=neutral, PublicKeyToken=0067ab5fb178b204, processorArchitecture=MSIL">
+      <HintPath>packages\MVC_PPC_Theme_ByTom.1.4.1\lib\Patagames.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Patagames.Pdf.WinForms, Version=3.4.1.0, Culture=neutral, PublicKeyToken=0067ab5fb178b204, processorArchitecture=MSIL">
+      <HintPath>packages\MVC_PPC_Theme_ByTom.1.4.1\lib\Patagames.Pdf.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Patagames.Pdf.Wpf, Version=3.4.2.0, Culture=neutral, PublicKeyToken=0067ab5fb178b204, processorArchitecture=MSIL">
+      <HintPath>packages\MVC_PPC_Theme_ByTom.1.4.1\lib\Patagames.Pdf.Wpf.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -63,6 +96,26 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="App_Code\GlyphIcon.cshtml" />
+    <None Include="Content\bootstrap-material-design.css.map" />
+    <None Include="Content\bootstrap-material-design.min.css.map" />
+    <None Include="Content\bootstrap-theme.css.map" />
+    <None Include="Content\bootstrap-theme.min.css.map" />
+    <None Include="Content\bootstrap.css.map" />
+    <None Include="Content\bootstrap.min.css.map" />
+    <None Include="Content\ripples.css.map" />
+    <None Include="Content\ripples.min.css.map" />
+    <None Include="Content\styles\Master_Style\checkbox_radion.less" />
+    <None Include="Content\styles\Master_Style\nav_1.less" />
+    <None Include="fonts\fontawesome-webfont.eot" />
+    <None Include="fonts\fontawesome-webfont.ttf" />
+    <None Include="fonts\fontawesome-webfont.woff" />
+    <None Include="fonts\fontawesome-webfont.woff2" />
+    <None Include="fonts\FontAwesome.otf" />
+    <None Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="fonts\glyphicons-halflings-regular.woff" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -72,9 +125,97 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Scripts\material.min.js.map" />
+    <None Include="Scripts\ripples.min.js.map" />
+    <None Include="Views\Shared\_Layout.cshtml" />
+    <None Include="Views\_ViewStart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-material-design.css" />
+    <Content Include="Content\bootstrap-material-design.min.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\ripples.css" />
+    <Content Include="Content\ripples.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\styles\images\sort_asc.png" />
+    <Content Include="Content\styles\images\sort_both.png" />
+    <Content Include="Content\styles\images\sort_desc.png" />
+    <Content Include="Content\styles\Master_Style\bootstrap-material-datetimepicker.css" />
+    <Content Include="Content\styles\Master_Style\bootstrap-select.min.css" />
+    <Content Include="Content\styles\Master_Style\checkbox_radion.css" />
+    <Content Include="Content\styles\Master_Style\checkbox_radion.min.css" />
+    <Content Include="Content\styles\Master_Style\demo.css" />
+    <Content Include="Content\styles\Master_Style\fileinput.min.css" />
+    <Content Include="Content\styles\Master_Style\jquery.dataTables.min.css" />
+    <Content Include="Content\styles\Master_Style\metisMenu.min.css" />
+    <Content Include="Content\styles\Master_Style\nav_1.css" />
+    <Content Include="Content\styles\Master_Style\nav_1.min.css" />
+    <Content Include="Content\styles\Master_Style\responsive.dataTables.min.css" />
+    <Content Include="Content\styles\Master_Style\stimulsoft.viewer.office2013.whitegreen.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\Master_Scripts\bootstrap-dialog.min.js" />
+    <Content Include="Scripts\Master_Scripts\bootstrap-material-datetimepicker.js" />
+    <Content Include="Scripts\Master_Scripts\bootstrap-select.min.js" />
+    <Content Include="Scripts\Master_Scripts\bootstrap.js" />
+    <Content Include="Scripts\Master_Scripts\dataTables.responsive.min.js" />
+    <Content Include="Scripts\Master_Scripts\fileinput.min.js" />
+    <Content Include="Scripts\Master_Scripts\formValidation.min.js" />
+    <Content Include="Scripts\Master_Scripts\Highcharts\highcharts.js" />
+    <Content Include="Scripts\Master_Scripts\Highcharts\highcharts.min.js" />
+    <Content Include="Scripts\Master_Scripts\Highcharts\modules\exporting.js" />
+    <Content Include="Scripts\Master_Scripts\Highcharts\modules\exporting.min.js" />
+    <Content Include="Scripts\Master_Scripts\jBootstrap-dialog.js" />
+    <Content Include="Scripts\Master_Scripts\jBootstrap-dialog.min.js" />
+    <Content Include="Scripts\Master_Scripts\jCommon.js" />
+    <Content Include="Scripts\Master_Scripts\jCommon.min.js" />
+    <Content Include="Scripts\Master_Scripts\jCustomPageMain.js" />
+    <Content Include="Scripts\Master_Scripts\jCustomPageMain.min.js" />
+    <Content Include="Scripts\Master_Scripts\jnav_1.js" />
+    <Content Include="Scripts\Master_Scripts\jnav_1.min.js" />
+    <Content Include="Scripts\Master_Scripts\jquery.cookie.js" />
+    <Content Include="Scripts\Master_Scripts\jquery.cookie.min.js" />
+    <Content Include="Scripts\Master_Scripts\jquery.dataTables.min.js" />
+    <Content Include="Scripts\Master_Scripts\jReportViewer.js" />
+    <Content Include="Scripts\Master_Scripts\jReportViewer.min.js" />
+    <Content Include="Scripts\Master_Scripts\linq.min.js" />
+    <Content Include="Scripts\Master_Scripts\loadingoverlay.min.js" />
+    <Content Include="Scripts\Master_Scripts\loadingoverlay_progress.min.js" />
+    <Content Include="Scripts\Master_Scripts\metisMenu.min.js" />
+    <Content Include="Scripts\Master_Scripts\moment-with-locales.min.js" />
+    <Content Include="Scripts\Master_Scripts\Stimulsoft\stimulsoft.designer.js" />
+    <Content Include="Scripts\Master_Scripts\Stimulsoft\stimulsoft.designer.pack.js" />
+    <Content Include="Scripts\Master_Scripts\Stimulsoft\stimulsoft.reports.js" />
+    <Content Include="Scripts\Master_Scripts\Stimulsoft\stimulsoft.reports.maps.js" />
+    <Content Include="Scripts\Master_Scripts\Stimulsoft\stimulsoft.reports.maps.pack.js" />
+    <Content Include="Scripts\Master_Scripts\Stimulsoft\stimulsoft.reports.pack.js" />
+    <Content Include="Scripts\Master_Scripts\Stimulsoft\stimulsoft.viewer.js" />
+    <Content Include="Scripts\Master_Scripts\Stimulsoft\stimulsoft.viewer.pack.js" />
+    <Content Include="Scripts\material.js" />
+    <Content Include="Scripts\material.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\ripples.js" />
+    <Content Include="Scripts\ripples.min.js" />
+    <Content Include="Scripts\Shared\j_Layout.js" />
+    <Content Include="Scripts\Shared\j_Layout.min.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
