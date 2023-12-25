@@ -1,12 +1,14 @@
-﻿using System;
+﻿using BloodBankManagementSystem.UI;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using OfficeOpenXml;
 
-namespace ProjectSE104
+namespace BloodBankManagementSystem
 {
-    internal static class Program
+    static class Program
     {
         /// <summary>
         /// The main entry point for the application.
@@ -14,9 +16,10 @@ namespace ProjectSE104
         [STAThread]
         static void Main()
         {
+            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frmSplash());
         }
     }
 }
